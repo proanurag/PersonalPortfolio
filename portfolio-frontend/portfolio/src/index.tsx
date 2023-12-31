@@ -7,10 +7,15 @@ import reportWebVitals from "./reportWebVitals";
 import "typeface-roboto";
 import "typeface-montserrat";
 import "typeface-lato";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(fas);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <App />
