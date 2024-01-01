@@ -10,8 +10,9 @@ import { useState } from "react";
 
 const Logo = styled.img`
   margin-right: 0px;
-  height: 20px;
+  height: 40px;
   margin-bottom: 5px;
+  background-color: #1a1a1a;
 `;
 
 const NavbarCSS: React.FC = () => {
@@ -33,11 +34,11 @@ const NavbarCSS: React.FC = () => {
       className="bg-body-tertiary mb-5"
       style={{ padding: "0" }}
     >
-      <Container fluid style={{ backgroundColor: "#87CEEB" }}>
+      <Container fluid style={{ backgroundColor: "#1a1a1a" }}>
         <Navbar.Brand
           href="/"
           style={{
-            color: "#333333",
+            color: "#f0f0f0",
             fontFamily: "Lato, sans-serif",
             fontWeight: "bold",
             marginLeft: "20px",
@@ -64,7 +65,7 @@ const NavbarCSS: React.FC = () => {
             <Nav.Link
               href="/"
               style={{
-                color: "#333333",
+                color: "#f0f0f0",
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "bold",
               }}
@@ -74,7 +75,7 @@ const NavbarCSS: React.FC = () => {
             <Nav.Link
               href="/about-us"
               style={{
-                color: "#333333",
+                color: "#f0f0f0",
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "bold",
               }}
@@ -82,15 +83,27 @@ const NavbarCSS: React.FC = () => {
               About
             </Nav.Link>
             <NavDropdown
-              title="Link"
+              title={
+                <span
+                  style={{
+                    color: "#FFFFFF",
+                    fontFamily: "Lato, sans-serif",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Link
+                </span>
+              }
               id="navbarScrollingDropdown"
               style={{
-                color: "#333333",
+                color: "#FFFFFF",
                 fontFamily: "Lato, sans-serif",
                 fontWeight: "bold",
               }}
             >
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action3" style={{ color: "" }}>
+                Action
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
               </NavDropdown.Item>
@@ -98,7 +111,6 @@ const NavbarCSS: React.FC = () => {
               <NavDropdown.Item
                 href="#action5"
                 style={{
-                  color: "#333333",
                   fontFamily: "Lato, sans-serif",
                   fontWeight: "bold",
                 }}

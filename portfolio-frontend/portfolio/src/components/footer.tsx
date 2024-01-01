@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         left: "0",
         right: "0",
         height: "auto",
-        backgroundColor: "#87CEEB",
+        backgroundColor: "#1a1a1a",
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon
             icon={faFacebook}
             size="2x"
-            color="#333333"
+            color="#fff"
             style={{ marginRight: "40px" }}
           />
         </a>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon
             icon={faLinkedinIn}
             size="2x"
-            color="#333333"
+            color="#fff"
             style={{ marginRight: "40px" }}
           />
         </a>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon
             icon={faInstagram}
             size="2x"
-            color="#333333"
+            color="#fff"
             style={{ marginRight: "40px", marginTop: "2px" }}
           />
         </a>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon
             icon={faXTwitter}
             size="2x"
-            color="#333333"
+            color="#fff"
             style={{ marginRight: "40px" }}
           />
         </a>
@@ -85,12 +85,12 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon
             icon={faYoutube}
             size="2x"
-            color="#333333"
+            color="#fff"
             style={{ marginRight: "40px" }}
           />
         </a>
         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} size="2x" color="#333333" />
+          <FontAwesomeIcon icon={faGithub} size="2x" color="#fff" />
         </a>
       </div>
 
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
           fontWeight: "500",
           fontFamily: "Times New Romans, monospace",
           marginTop: "20px",
-          color: "#000",
+          color: "#fff",
         }}
       >
         © Copyright 2023 - 2028
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
           fontWeight: "500",
           marginBottom: "20px",
           fontFamily: "Times New Romans, monospace",
-          color: "#000",
+          color: "#fff",
         }}
       >
         All rights reserved.
