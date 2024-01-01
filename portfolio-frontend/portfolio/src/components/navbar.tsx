@@ -17,17 +17,6 @@ const Logo = styled.img`
 
 const NavbarCSS: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const buttonStyle = {
-    backgroundColor: isHovered ? "#4682B4" : "#2E5A8B",
-    color: "#FFFFFF",
-    padding: "5px 15px",
-    textDecoration: "none",
-    display: "inline-block",
-    transition: "background-color 0.3s", // Optional: Add a transition for a smooth hover effect
-    marginTop: "5px",
-    marginBottom: "5px",
-    borderColor: "#4682B4",
-  };
   return (
     <Navbar
       expand="lg"
@@ -127,7 +116,17 @@ const NavbarCSS: React.FC = () => {
               aria-label="Search"
             />
             <Button
-              style={buttonStyle}
+              style={{
+                backgroundColor: isHovered ? "#ffa500" : "#ff5722",
+                color: "#FFFFFF",
+                padding: "5px 15px",
+                textDecoration: "none",
+                display: "inline-block",
+                transition: "background-color 0.3s", // Optional: Add a transition for a smooth hover effect
+                marginTop: "10px",
+                marginBottom: "5px",
+                borderColor: "#4682B4",
+              }}
               onMouseOver={() => setIsHovered(true)}
               onMouseOut={() => setIsHovered(false)}
             >
