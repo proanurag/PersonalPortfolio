@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Logo = styled.img`
   margin-right: 0px;
-  height: 40px;
+  height: 30px;
   margin-bottom: 5px;
   background-color: #1a1a1a;
 `;
@@ -37,7 +37,7 @@ const NavbarCSS: React.FC = () => {
           <div
             style={{
               display: "inline-block",
-              marginLeft: "15px",
+              marginLeft: "10px",
               fontSize: "20px",
             }}
           >
@@ -83,7 +83,8 @@ const NavbarCSS: React.FC = () => {
                   Link
                 </span>
               }
-              id="navbarScrollingDropdown"
+              id="dropdown-button-dark-example2"
+              data-bs-theme="dark"
               style={{
                 color: "#FFFFFF",
                 fontFamily: "Lato, sans-serif",
